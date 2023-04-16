@@ -1,0 +1,217 @@
+[
+  {
+    "_id": "70f28862-00b1-4f9a-8341-eca2b0464400",
+    "colId": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "containerId": "7d58efad-21ec-44a8-b002-198c69569fe3",
+    "name": "bills",
+    "url": "{{url}}/bills",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-04-16T12:43:12.339Z",
+    "modified": "2023-04-16T12:43:29.564Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "58b263a9-3c7e-4d7e-b8d0-a08830b07277",
+    "colId": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "containerId": "7d58efad-21ec-44a8-b002-198c69569fe3",
+    "name": "bill",
+    "url": "{{url}}/bills/{id}",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-04-16T12:43:33.292Z",
+    "modified": "2023-04-16T12:43:50.412Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "{{bill_id}}",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "1207e0a4-4fbb-44e0-9338-fab211c72c36",
+    "colId": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "containerId": "7d58efad-21ec-44a8-b002-198c69569fe3",
+    "name": "bill",
+    "url": "{{url}}/bills",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2023-04-16T12:43:52.041Z",
+    "modified": "2023-04-16T12:44:43.686Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "    {\n      \"id\": 1,\n      \"billnum\": 209345600,\n      \"description\": \"Création de site internet et hébergement\",\n      \"date\": \"08/03/2023\",\n      \"client\": {\n        \"idclient\": 1,\n        \"firstName\": \"Marc\",\n        \"lastName\": \"Scout\",\n        \"companyName\": \"Lumon Industries\"\n      },\n      \"prestations\": [\n        {\n          \"description\": \"Etude graphique UX\",\n          \"qty\": 2,\n          \"price\": 450.0\n        },\n        {\n          \"description\": \"Création d’un site Wordpress\",\n          \"qty\": 5,\n          \"price\": 450.0\n        },\n        {\n          \"description\": \"Hébergement annuel\",\n          \"qty\": 1,\n          \"price\": 250.0\n        }\n      ],\n      \"discount\": 0.0,\n      \"paid\": 0.0,\n      \"totalHT\": 3400,\n      \"tva\": 20,\n      \"totalTTC\": 4080\n    }",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json._id",
+        "action": "setto",
+        "value": "{{bill_id}}"
+      }
+    ]
+  },
+  {
+    "_id": "146f10f6-0b4f-430f-9d08-2f94b4ba91e8",
+    "colId": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "containerId": "7d58efad-21ec-44a8-b002-198c69569fe3",
+    "name": "bill",
+    "url": "{{url}}/bills/{id}",
+    "method": "PATCH",
+    "sortNum": 50000,
+    "created": "2023-04-16T12:44:46.241Z",
+    "modified": "2023-04-16T13:30:16.975Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "{{bill_id}}",
+        "isPath": true
+      }
+    ],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"description\": \"Description tests\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "06e1dd0b-04fd-4a77-914e-c6be45053efa",
+    "colId": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "containerId": "7d58efad-21ec-44a8-b002-198c69569fe3",
+    "name": "bill",
+    "url": "{{url}}/bills/{id}",
+    "method": "DELETE",
+    "sortNum": 60000,
+    "created": "2023-04-16T12:45:31.863Z",
+    "modified": "2023-04-16T12:47:50.287Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "{{bill_id}}",
+        "isPath": true
+      }
+    ],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"billnum\": 2,\n  \"date\": \"10/05/2028\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "4cf85b6f-46ce-45cf-8c65-f1a1f863ba31",
+    "colId": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "containerId": "567a3f05-142d-4a03-8444-3afd5017c578",
+    "name": "clients",
+    "url": "{{url}}/clients",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-04-16T12:45:55.628Z",
+    "modified": "2023-04-16T13:12:56.359Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "ca32f650-1ac4-43d0-85fd-6b74a6f8ca74",
+    "colId": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "containerId": "567a3f05-142d-4a03-8444-3afd5017c578",
+    "name": "client",
+    "url": "{{url}}/clients/{id}",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-04-16T12:45:55.629Z",
+    "modified": "2023-04-16T13:19:07.470Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "{{client_id}}",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "7a5167c3-115d-4181-ab8b-72b5adbbba25",
+    "colId": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "containerId": "567a3f05-142d-4a03-8444-3afd5017c578",
+    "name": "client",
+    "url": "{{url}}/clients",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2023-04-16T12:45:55.630Z",
+    "modified": "2023-04-16T13:21:08.623Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n    \"firstName\": \"ThunderClient\",\r\n    \"lastName\": \"Test\",\r\n    \"office\": \"Logiciel\",\r\n    \"phone\": \"00000000\",\r\n    \"email\": \"thunderClient@test.fr\",\r\n    \"company\": \"ThunderClicli\",\r\n    \"addressLine1\": \"Clic\",\r\n    \"addressLine2\": \"\",\r\n    \"zipCode\": \"57\",\r\n    \"city\": \"Bla\",\r\n    \"selectedCountry\": \"France\",\r\n    \"country\": [\r\n        \"France\",\r\n        \"Allemagne\",\r\n        \"Belgique\",\r\n        \"Luxembourg\"\r\n    ],\r\n    \"addedDate\": \"2023-04-09\",\r\n    \"__v\": 0\r\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json._id",
+        "action": "setto",
+        "value": "{{client_id}}"
+      }
+    ]
+  },
+  {
+    "_id": "a5d292f6-8c31-4cd8-b239-6b19dbbfb719",
+    "colId": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "containerId": "567a3f05-142d-4a03-8444-3afd5017c578",
+    "name": "client",
+    "url": "{{url}}/clients/{id}",
+    "method": "PATCH",
+    "sortNum": 50000,
+    "created": "2023-04-16T12:45:55.631Z",
+    "modified": "2023-04-16T13:36:07.607Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "{{client_id}}",
+        "isPath": true
+      }
+    ],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"city\": \"Test\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "1aa07f3e-ad4f-4ab3-a1ed-1751ce0c2514",
+    "colId": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "containerId": "567a3f05-142d-4a03-8444-3afd5017c578",
+    "name": "client",
+    "url": "{{url}}/clients/{id}",
+    "method": "DELETE",
+    "sortNum": 60000,
+    "created": "2023-04-16T12:45:55.633Z",
+    "modified": "2023-04-16T13:21:32.693Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "{{client_id}}",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  }
+]

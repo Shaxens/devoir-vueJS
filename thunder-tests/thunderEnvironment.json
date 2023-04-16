@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "fb634f42-051c-4de4-9e96-0f7de0b7ee90",
+    "name": "bills-backend-api-env",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2023-04-16T12:42:06.237Z",
+    "modified": "2023-04-16T12:42:06.237Z",
+    "data": [
+      {
+        "name": "url",
+        "value": "http://localhost:3000"
+      },
+      {
+        "name": "bill_id",
+        "value": "642edb6bbfdca02ef0170eff"
+      },
+      {
+        "name": "client_id",
+        "value": "643bf645e87aea8dd9bbf6a7"
+      }
+    ]
+  }
+]

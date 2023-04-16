@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "b861386a-c3b5-407c-a41a-fc7705eba57c",
+    "colName": "bills-backend-api",
+    "created": "2023-04-16T12:42:50.702Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "7d58efad-21ec-44a8-b002-198c69569fe3",
+        "name": "bills",
+        "containerId": "",
+        "created": "2023-04-16T12:42:57.543Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "567a3f05-142d-4a03-8444-3afd5017c578",
+        "name": "clients",
+        "containerId": "",
+        "created": "2023-04-16T12:45:55.628Z",
+        "sortNum": 20000
+      }
+    ]
+  }
+]
